@@ -1,0 +1,19 @@
+{
+
+  "name": "Lavalink na heroku",
+  "description": "Configure seu servidor Lavalink na Heroku facilmente",
+  "repository": "https://github.com/yuka-tuka/lavalink-heroku",
+  "logo": "https://i.imgur.com/5W5kjr5.png",
+  "keywords": [
+      "heroku", 
+      "lavalink", 
+      "java",
+      "music"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/java"
+    }
+  ]
+
+}

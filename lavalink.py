@@ -5,7 +5,7 @@ from os import system, environ
 class lavalinkserver:
 
     def __init__(self):
-        self.download_command = "wget https://ci.fredboat.com/repository/download/Lavalink_Build/7630:id/Lavalink.jar"
+        self.download_command = "curl -s https://api.github.com/repos/Frederikam/Lavalink/releases/22355850 | grep browser_download_url | cut -d '\"' -f 4 | wget -qi -"
         self.change_port = 'sed -i "s|CPORT|$PORT|" application.yml'
         self.change_password = 'sed -i "s|CPASSWORD|$PASSWORD|" application.yml'
         self.no_password = 'sed -i "s|CPASSWORD|youshallnotpass|" application.yml'
